@@ -1,29 +1,212 @@
-  <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Delhi Raja App Download</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Raja App - Download</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        /* General Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align content to the top */
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+            padding: 30px;
+            margin: 30px 15px; /* Margin for mobile responsiveness */
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Header and Logo */
+        .app-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .app-logo {
+            width: 100px; /* Adjust size as needed */
+            height: 100px;
+            border-radius: 20px; /* Slightly rounded logo */
+            margin-bottom: 15px;
+            object-fit: contain; /* Ensure logo fits */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-title {
+            font-size: 2.2em; /* Larger title */
+            color: #2c3e50;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Download Section */
+        .download-section {
+            margin-bottom: 30px;
+        }
+
         .download-button {
-            background-color: #4CAF50; /* Green */
+            display: inline-block;
+            background: linear-gradient(135deg, #4CAF50 0%, #28a745 100%); /* Green gradient */
             color: white;
-            padding: 15px 32px;
+            padding: 15px 40px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            margin: 20px 2px;
+            font-size: 1.2em; /* Larger font */
+            font-weight: 600;
+            border-radius: 30px; /* Pill-shaped button */
+            box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3); /* Green shadow */
+            transition: all 0.3s ease;
+            border: none;
             cursor: pointer;
+            width: auto; /* Allow button to size naturally */
+            min-width: 200px;
+        }
+
+        .download-button:hover {
+            background: linear-gradient(135deg, #28a745 0%, #4CAF50 100%);
+            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .download-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+        }
+
+        .download-note {
+            font-size: 0.95em;
+            color: #e74c3c; /* Red color for warning */
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffebeb;
             border-radius: 8px;
+            border: 1px solid #e74c3c;
+            font-weight: 600;
+        }
+
+        /* Installation Instructions */
+        .instructions-section {
+            text-align: left;
+            margin-bottom: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .instructions-section h2 {
+            font-size: 1.6em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .instructions-section ol {
+            padding-left: 25px;
+            margin: 0;
+        }
+
+        .instructions-section li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .instructions-section li strong {
+            color: #333;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px 10px;
+                padding: 20px;
+            }
+            .app-title {
+                font-size: 1.8em;
+            }
+            .tagline {
+                font-size: 1em;
+            }
+            .download-button {
+                font-size: 1em;
+                padding: 12px 30px;
+            }
+            .instructions-section h2 {
+                font-size: 1.4em;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Download Delhi Raja App</h1>
-    <p>Get the latest version of our Android app here:</p>
-    <a href="https://github.com/delhirajaplays/Delhi-Raja-App/raw/main/Delhi Raja Official.apk" class="download-button" class="download-button" download>
-        Download APK
-    </a>
-    <p><strong>Note:</strong> You may see a warning about installing from unknown sources. Please allow the installation to proceed.</p>
+    <div class="container">
+        <header class="app-header">
+            <img src="https://placehold.co/100x100/A0DA88/FFFFFF?text=Logo" alt="Delhi Raja App Logo" class="app-logo">
+            <h1 class="app-title">Delhi Raja Official App</h1>
+            <p class="tagline">Get the latest version of our Android app here!</p>
+        </header>
+
+        <section class="download-section">
+            <a href="https://github.com/delhirajaplays/Delhi-Raja-App/raw/main/Delhi Raja Official.apk" class="download-button" download>
+                Download APK Now
+            </a>
+            <p class="download-note">
+                <strong>Important:</strong> You may see a warning about installing from unknown sources or Play Protect. Please allow the installation to proceed. Your app is safe!
+            </p>
+        </section>
+
+        <section class="instructions-section">
+            <h2>How to Install the App:</h2>
+            <ol>
+                <li>Click the "Download APK Now" button above.</li>
+                <li>If prompted, approve the download (e.g., "Keep" or "OK").</li>
+                <li>Once downloaded, open the APK file from your notifications or browser downloads.</li>
+                <li>If you see a "Blocked by Play Protect" or "Install unknown apps" warning:
+                    <ul>
+                        <li>Go to <strong>Settings</strong> -> <strong>Security</strong> -> <strong>Install unknown apps</strong>.</li>
+                        <li>Find your browser (e.g., Chrome) or file manager (e.g., Files) and <strong>allow installation from this source</strong>.</li>
+                        <li>Go back and tap "Install Anyway" if prompted by Play Protect.</li>
+                    </ul>
+                </li>
+                <li>Tap "Install" to complete the installation.</li>
+                <li>Open the Delhi Raja Official App and enjoy!</li>
+            </ol>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Delhi Raja. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
+
